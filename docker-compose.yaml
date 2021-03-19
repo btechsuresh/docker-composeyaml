@@ -32,7 +32,7 @@ services:
       - HUB_HOST=hub
       - MODULE=searchmodule.xml
     volumes:
-      - ./search-result:/a/b/c/test-output
+      - ./output/search-result:/a/b/c/test-output
       
   bool-flight-module:
     image: selenium-docker
@@ -44,4 +44,4 @@ services:
       - HUB_HOST=hub
       - MODULE=book-flight-module.xml
     volumes:
-      - ./book-flight-result:/a/b/c/test-output
+      - ./output/book-flight-result:/a/b/c/test-output
